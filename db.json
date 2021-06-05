@@ -1,19 +1,154 @@
 {
-  "posts": [
+  "rateTable": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Tabela Básica",
+      "feels": {
+        "id": 1,
+        "installments": 7,
+        "interest": 0,
+        "percentageInterestIncrease": 1.5,
+        "comission": 4.5,
+        "portionAmount": 550.45,
+        "amount": 5000
+      }
+    },
+    {
+      "id": 2,
+      "name": "Tabela Advanced",
+      "feels": {
+        "id": 1,
+        "installments": 12,
+        "interest": 0,
+        "percentageInterestIncrease": 1.9,
+        "comission": 8.8
+      }
     }
   ],
-  "comments": [
+  "client": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Alexander Pimentel",
+      "phone": 71999999999,
+      "cpf": 99999999999,
+      "bank": {
+        "label": "003 - Banco da Amazonia S.A.",
+        "accountTypeLabel": "Conta Corrente",
+        "accountNumber": 378282246310005,
+        "agency": 1045
+      }
+    },
+    {
+      "id": 2,
+      "name": "Floribela Da Conceição",
+      "phone": 71222222222,
+      "cpf": 22222222294,
+      "bank": {
+        "label": "003 - Banco da Amazonia S.A.",
+        "accountTypeLabel": "Conta Corrente",
+        "accountNumber": 378282246310005,
+        "agency": 6752
+      }
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "solicitation": [
+    {
+      "id": 1,
+      "clientId": 1,
+      "installmentInterestValue": 20.5,
+      "comissionValue": 122.21,
+      "installmentValue": 1338.76,
+      "cardNumber": 4012001037141112,
+      "desiredValue": 2222,
+      "totalPayment": 2677.51,
+      "rateTableId": 2,
+      "numberOfInstallments": 6,
+      "contract": "manual"
+    },
+    {
+      "id": 4782,
+      "clientId": 1,
+      "installmentInterestValue": 105,
+      "comissionValue": 450,
+      "installmentValue": 184.16666666666666,
+      "cardNumber": 7777444466668888,
+      "desiredValue": 1000,
+      "totalPayment": 1105,
+      "rateTableId": 1,
+      "numberOfInstallments": 6,
+      "contract": "manual"
+    },
+    {
+      "id": 9266,
+      "clientId": 1,
+      "installmentInterestValue": 787.5,
+      "comissionValue": 25312.5,
+      "installmentValue": 1381.25,
+      "cardNumber": 7754512128856699,
+      "desiredValue": 7500,
+      "totalPayment": 8287.5,
+      "rateTableId": 1,
+      "numberOfInstallments": 6,
+      "contract": "manual"
+    },
+    {
+      "id": 5541,
+      "clientId": 1,
+      "installmentInterestValue": 789.6000000000004,
+      "comissionValue": 25447.68,
+      "installmentValue": 1384.9333333333334,
+      "cardNumber": 7744112255889933,
+      "desiredValue": 7520,
+      "totalPayment": 8309.6,
+      "rateTableId": 1,
+      "numberOfInstallments": 6,
+      "contract": "automatico"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "cardNumber": 4012001037141112,
+      "expirationDate": "12/27",
+      "nameCard": "Jamed",
+      "cvc": 777,
+      "frontPhoto": "",
+      "backPhoto": "",
+      "selfiePhot": "",
+      "idClient": 1
+    },
+    {
+      "id": 2389,
+      "cardNumber": 7777444466668888,
+      "expirationDate": "2023-06",
+      "nameCard": "Alexander Pimentel",
+      "cvc": 445,
+      "idClient": 1,
+      "frontPhoto": "",
+      "backPhoto": "",
+      "selfiePhot": ""
+    },
+    {
+      "id": 1503,
+      "cardNumber": 7754512128856699,
+      "expirationDate": "2027-01",
+      "nameCard": "Alexander Pimentel",
+      "cvc": 331,
+      "idClient": 1,
+      "frontPhoto": "",
+      "backPhoto": "",
+      "selfiePhot": ""
+    },
+    {
+      "id": 2060,
+      "cardNumber": 7744112255889933,
+      "expirationDate": "2027-07",
+      "nameCard": "Alexander Pimentel",
+      "cvc": 144,
+      "idClient": 1,
+      "frontPhoto": "",
+      "backPhoto": "",
+      "selfiePhot": ""
+    }
+  ]
 }
